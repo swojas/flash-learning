@@ -16,14 +16,36 @@ export default function App() {
   return (
     <Router>
       <>
-        <nav className="navbar navbar-dark bg-dark">
-  <div className="container-fluid">
-    <a className="navbar-brand " href="/home">
-      <img src="logo.svg" alt="" width="30" height="24" className="d-inline-block align-text-top" />
-      <span className="px-3">Flash Learning</span>
-    </a>
-  </div>
-</nav>
+        <div>
+          <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+            <div className="container">
+              <a className="navbar-brand" href="/home">
+                <img src="logo192.png" alt="" width="30" height="30"></img>
+                <span className="px-2 text-white">Flash Learning</span>
+              </a>
+            </div>
+            <div className="container">
+              <div className="container-fluid">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form className="d-flex">
+                    <input type="text" style={{width: '500px'}} placeholder="Search for more tutorials" />
+                    <span className="px-2"></span>
+                    <button className="btn btn-outline-success">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <a href="#">
+              <img className="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                data-holder-rendered="true" width="35" height="35"></img></a>
+            <span className="px-2"></span>
+          </nav>
+
+          </div>
 
     <div>
 <ul className="nav nav-tabs justify-content-start bg-white px-2 py-1">
@@ -38,6 +60,9 @@ export default function App() {
 
       </ul>
 </div>
+
+        
+
         
         <Switch>
           <Route exact path="/nodejs" component={NodeJS} />
