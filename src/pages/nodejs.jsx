@@ -2,21 +2,20 @@ import React from "react";
 
 
 function NodeJS() {
-  return <md-card className="justify-content-center">
-            <md-card-title>
-            <md-card-title-text>
-                <span className = "md-headline">Dont know where to Start learning NodeJS?</span>
-            </md-card-title-text>
-            </md-card-title>
-      
-            <iframe width="720" height="415" id="player"
-                src="https://www.youtube.com/watch?v=Oe421EPjeBE">
-              </iframe>
-            
-            <md-card-content>
-            <p>Here is the link for you to get started with NodeJS</p>
-            </md-card-content>
-        </md-card>;
+  return <div className="card text-center">
+    <div className="card-header">
+      Dont know where to Start learning NodeJS?
+  </div>
+    <div className="card-body">
+      <iframe width="720" height="415" src="https://www.youtube.com/embed/Oe421EPjeBE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+      <p className="card-text">Here is the link for you to get started with NodeJS</p>
+    </div>
+  </div>;
+
+  
 }
 
 export default NodeJS;
+
+
