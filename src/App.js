@@ -40,18 +40,10 @@ export default function App() {
 </div>
         
         <Switch>
-          <Route path="/nodejs">
-            <NodeJS />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/angularjs">
-            <AngularJS />
-          </Route>
+          <Route exact path="/nodejs" component={NodeJS} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/angularjs" component={AngularJS} />
           <Route path="*">
             <NoMatch />
           </Route>
